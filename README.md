@@ -26,7 +26,7 @@ The script expects that these tools are found in the following directories:
 
 # How to use
 ```
-./extract_video_frames.ps1 --VideoFile [FILENAME] --FrameRate [FRAMERATE]
+./extract_video_frames.ps1 -VideoFile [FILENAME] -FrameRate [FRAMERATE]
 ```
 
 This will create a new directory `[FILENAME]-[FRAMERATE]fps` and extracts images these.

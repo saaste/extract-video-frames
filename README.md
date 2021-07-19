@@ -1,7 +1,7 @@
-# Time-stamped image extractor
-Extract images from a video and sync the timestamps. This script is based on a shell script by muffu @ OFTC/#osm-fi.
+# Video Frame Extractor with Timestamp Sync
+Extract frames from a video and sync the image timestamps. This PowerShell script is based on a shell script by muffu @ OFTC/#osm-fi.
 
-Image extractor is useful for [OpenStreetMap](https://www.openstreetmap.org) contributors. Images with
+Frame extractor is useful for [OpenStreetMap](https://www.openstreetmap.org) contributors. Images with
 timestamps can be shown with GPS track in [JOSM](https://josm.openstreetmap.de/) editor. This makes identifying real-world objects really easy and you don't have to rely on your memory.
 
 Instead of taking a ton of photos manually, you can just record your whole journey as a video and then extract the images later. It is possible to adjust the offset in JOSM editor, but it is recommended to start GPS tracking and video recording at the same time.
@@ -13,7 +13,7 @@ Instead of taking a ton of photos manually, you can just record your whole journ
 
 The script expects that these tools are found in the following directories:
 ```
-- script.ps1
+- extract_video_frames.ps1
 - exiftool
   - exiftool.exe
 - exiv2
@@ -33,4 +33,4 @@ This will create a new directory `[FILENAME]-[FRAMERATE]fps` and extracts images
 
 `FrameRate` parameter defines how many images are extracted each second. Default is `2`.
 
-All images are then timestamped based on the video's creation time and given framerate.
+Image timestamps are calculated based on video's creation time and given framerate.

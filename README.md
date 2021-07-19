@@ -29,7 +29,9 @@ The script expects that these tools are found in the following directories:
 ./extract_video_frames.ps1 --VideoFile [FILENAME] --FrameRate [FRAMERATE]
 ```
 
-This will create a new directory `[FILENAME]-[FRAMERATE]fps` and extracts images there.
+This will create a new directory `[FILENAME]-[FRAMERATE]fps` and extracts images these.
+
+`VideoFile` parameter can be a single file or a wildcard search e.g GOPR55*.MP4. All matching files will be processed.
 
 `FrameRate` parameter defines how many images are extracted each second. Default is `2`.
 

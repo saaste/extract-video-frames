@@ -12,6 +12,11 @@ param (
     $FrameRate = 2
 )
 
+if (-not (Test-Path $VideoFile -PathType Leaf)) {
+    Write-Output "File ${VideoFile} does not exist"
+    exit
+}
+
 $VideoFileBaseName = [io.path]::GetFileNameWithoutExtension($VideoFile)
 $Path = "${VideoFileBaseName}-${FrameRate}fps"
 
